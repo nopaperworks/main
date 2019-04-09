@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+      html {
+        height: 100%;
+        background: #000;
+      }
+      body {
+        position: relative;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        font-family: Arial;
+      }
+      .main {
+        background: rgba(100,100,100,0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+      }
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        background-image: url('./background.jpg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        z-index: -100;
+      }
+      .footer {
+        position: absolute;
+        background: #111;
+        height: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        padding: 0 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        color: grey;
+        font-size: 0.8rem;
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .sentence {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+      }
+      .letter {
+        font-size: 3.5rem;
+        display: block;
+        text-transform: uppercase;
+      }
+      .sentence.bigger .letter {
+        font-weight: bold;
+        font-size: 4.5rem;
+      }
+      .white {
+        color: white;
+      }
+    </style>
+
+    <title>Intelligent Life</title>
+
+  </head>
+  
+  <body>
+    <div class="main">
+      <div class="background">
+      </div>
+      <div class="text">
+        <div>
+          <div class="sentence">
+            <span class="letter white">l</span>
+            <span class="letter white">e</span>
+            <span class="letter white">s</span>
+            <span class="letter white">s</span>
+            <span class="letter">&nbsp;</span>
+            <span class="letter white">b</span>
+            <span class="letter white">u</span>
+            <span class="letter white">r</span>
+            <span class="letter white">a</span>
+            <span class="letter white">u</span>
+            <span class="letter white">c</span>
+            <span class="letter white">r</span>
+            <span class="letter white">a</span>
+            <span class="letter white">c</span>
+            <span class="letter white">y</span>
+          </div>
+          <div class="sentence bigger">
+            <span class="letter" style="color:#E6261F;">m</span>
+            <span class="letter" style="color:#EB7532;">o</span>
+            <span class="letter" style="color:#F7D038;">r</span>
+            <span class="letter" style="color:#A3E048;">e</span>
+            <span class="letter">&nbsp;</span>
+            <span class="letter" style="color:#49DA9A;">l</span>
+            <span class="letter" style="color:#34BBE6;">i</span>
+            <span class="letter" style="color:#4355DB;">f</span>
+            <span class="letter" style="color:#D23BE7;">e</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <a HREF="mailto:ash-uncover@gmail.com">Contact Us</a>
+      <span>Copyright 2019-EOT, MaZe</span>
+    </div>
+  </body>
+
+    
+</html>
