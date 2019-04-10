@@ -27,19 +27,23 @@
         right: 0;
         bottom: 50px;
       }
-      .background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
+      .page {
+        height: 100%;
+        width: 100%;
+      }
+      .page1 {
         background-image: url('./background.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
-        z-index: -100;
+      }
+      .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(100,100,100,0.45);
       }
       .footer {
         position: absolute;
@@ -96,18 +100,21 @@
   
   <body>
     <div class="main">
-      <div class="background">
-      </div>
-      <div class="text">
-        <div>
-          <div class="sentence big white">
-            less paperworks
-          </div>
-          <div class="sentence bigger green">
-            more life
-          </div>
-          <div class="sentence white smaller">
-              The app that helps you with your paperworks
+
+      <div class="page page1">
+        <div class="content">
+          <div class="text">
+            <div>
+              <div class="sentence big white">
+                less paperworks
+              </div>
+              <div class="sentence bigger green">
+                more life
+              </div>
+              <div class="sentence white smaller">
+                  The app that helps you with your paperworks
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,8 +123,9 @@
 
     <div class="footer">
       <a class="contact" href="mailto:ash-uncover@gmail.com">Contact Us</a>
-      <span>Copyright 2019-EOT, MaZe</span>
+      <span>Copyright 2019, MaZe</span>
     </div>
+
   </body>
 
     
