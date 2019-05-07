@@ -1,0 +1,133 @@
+$headerHeight: 70px;
+$footerHeight: 50px;
+
+.app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: url('/assets/images/NoPaperworkBG.png');
+  background-size: cover;
+  background-position: center;
+
+  .app-header {
+    position: absolute;
+    top: 0;
+    height: $headerHeight;
+    left: 0;
+    right: 0;
+
+    background: #373A3F;
+    color: white;
+
+    .container-content {
+      height: $headerHeight;
+      display: flex;
+      align-items: center;
+
+      .app-header-item {
+        padding: 1rem;
+        font-size: 1.3rem;
+
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: #CCC;
+        }
+        .icon {
+          margin: 0 1rem;
+        }
+      }
+      .app-header-spacer {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .app-content {
+    position: absolute;
+    top: $headerHeight;
+    bottom: $footerHeight;
+    left: 0;
+    right: 0;
+
+    background: rgba(27,29,35,0.85);
+    color: white;
+
+    .app-page {
+      display: flex;
+      min-height: 100%;
+      align-items: center;
+
+      .app-block {
+        margin: 5%;
+        transform: translateY(-50px);
+        &.block-info {
+          width: 50%;
+        }
+
+        &.block-contact {
+          width: 30%;
+          >* {
+            width: 100%;
+          }
+          .contact-input {
+            margin: 1rem 0;
+            height: 2rem;
+            font-size: 1.2rem;
+
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid grey;
+            background: none;
+
+            color: white;
+            outline: none;
+          }
+          .contact-btn {
+            margin: 1rem 0;
+            font-size: 1.35rem;
+            color: white; 
+            border: 1px solid transparent;
+            background: #FFA41C;
+            text-transform: uppercase;
+            padding: 1rem 3rem;
+            outline: none;
+            &:hover {
+              background: #FFB42C;
+              border: 1px solid white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-footer {
+    position: absolute;
+    height: $footerHeight;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: black;
+    color: grey;
+
+    .container-content {
+      height: $footerHeight;
+      display: flex;
+      align-items: center;
+
+      .app-footer-item {
+        padding: 1rem;
+      }
+      .app-footer-spacer {
+        flex-grow: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Variables
+@import 'src/_commons';
+
+.container {
+  width: 100%;
+  .container-content {
+    margin: auto;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+  .container-content {
+    width: $screen-sm-min;
+  }
+}
+
+@media only screen and (max-width: $screen-md-max) {
+  .container-content {
+    width: $screen-md-min;
+  }
+}
+
+@media only screen and (min-width: $screen-lg-min) {
+  .container-content {
+    width: $screen-lg-min;
+  }
+}

@@ -1,0 +1,9 @@
+
+# NPM files
+npm-debug.log
+
+# Ignore node modules
+node_modules
+
+# test coverage info
+test/__coverage__

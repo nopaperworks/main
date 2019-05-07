@@ -19,113 +19,21 @@
         user-select: none;
         font-family: Arial;
       }
-      .main {
-        background: rgba(100,100,100,0.4);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 50px;
-      }
-      .page {
-        height: 100%;
-        width: 100%;
-      }
-      .page1 {
-        background-image: url('./background.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-      .content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: rgba(100,100,100,0.45);
-      }
-      .footer {
-        position: absolute;
-        background: #111;
-        height: 50px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        padding: 0 2rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        color: grey;
-        font-size: 0.8rem;
-      }
-      .text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-      .sentence {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5rem 0;
-        text-transform: uppercase;
-      }
-
-      .white {
-        color: white;
-      }
-      .green {
-        color: #A3E048;
-      }
-      .big {
-        font-size: 3.5rem;
-      }
-      .bigger {
-        font-size: 5rem;
-        font-weight: bold;
-      }
-      .smaller {
-        font-size: 1.8rem;
-      }
     </style>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous">
 
     <title>Intelligent Life</title>
 
   </head>
   
   <body>
-    <div class="main">
-
-      <div class="page page1">
-        <div class="content">
-          <div class="text">
-            <div>
-              <div class="sentence big white">
-                less paperworks
-              </div>
-              <div class="sentence bigger green">
-                more life
-              </div>
-              <div class="sentence white smaller">
-                  The app that helps you with your paperworks
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer">
-      <a class="contact" href="mailto:emmanuel.zarpas@gmail.com">Contact Us</a>
-      <span>Copyright 2019, MaZe</span>
-    </div>
-
+    <div id="reactroot" />
+    <script src="/bundle.js"></script>
   </body>
 
     
